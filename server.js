@@ -15,7 +15,8 @@ function requestHandler(req,res){
             break;
 
         default:
-            filePath = './404.html'
+            filePath = './Resume.html'
+            // filePath = './404.html'
             break;
     }
 
