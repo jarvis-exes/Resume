@@ -11,7 +11,7 @@ function requestHandler(req,res){
 
     switch(req.url){
         case '/':
-            filePath = 'Resume/Resume.html'
+            filePath = './Resume.html'
             break;
 
         default:
