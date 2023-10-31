@@ -49,21 +49,32 @@ body{
 
 
 #my-name{
-    font-size: 3rem;
+    font-size: 4rem;
     letter-spacing: 0.1 rem;
     color: white;
     font-weight: 700;
     margin-bottom: 0.5rem;
     margin-top: 8rem;
+    /* box-shadow: black 0px -50px 140px; */
+    transition: box-shadow 1s;
+    animation: nameShadowAnimation 2s linear 1 forwards;
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+}
+@keyframes nameShadowAnimation {
+    0%{
+        
+    }
+
+    100%{
+        box-shadow: black 0px -50px 140px;  
+    }
 }
 
 .social-icons li a img{
     height: 30px;
     margin-top: auto;
     padding: 5px;
-    transition: 0.5s ease-out;
-    transform: sca  ;
-    
+    transition: 0.5s ease-out; 
 }
 
 .social-icons li a img:hover{
@@ -417,6 +428,7 @@ section:nth-child(2n+1){
     font-size: 1.4rem;
     margin-left: -30px;
     margin-bottom: 5px;
+    color: white;
 }
 
 .vertical-list li img{
@@ -428,4 +440,31 @@ section:nth-child(2n+1){
     font-style:italic;
     text-decoration: none;
     
+}
+
+/* Certifcations */
+
+.container{
+    width: 80%;
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 25px 8%;
+}
+
+.gallery{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+}
+
+.gallery img{
+    width: 100%;
+    transition: all 3s ;
+}
+
+.gallery img:hover{
+    box-shadow: darkgray 0px 0px 30px 30px;
+    transition: all 0.2s ;
 }
