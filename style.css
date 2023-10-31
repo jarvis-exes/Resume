@@ -399,20 +399,35 @@ section:nth-child(2n+1){
 .contact{
     display: flex;
     width: 70%;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .getintouch{
-    border: 2px solid white;
-    text-align: center;
+    margin-right: 10%; 
+    text-align: end; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.getintouch .vertical-list{
+    text-align: end; 
+}
+
+.getintouch .vertical-list li{
+    padding: 4px; 
 }
 
 .getintouch span{
     font-size: 1.7rem;
+    /* font-style:italic; */
+    letter-spacing: 15px;
+    background-color: rgb(56, 56, 56);
 }
 
 .contact-socialmedia{
-    border: 2px solid white;
+    margin-left: 10%;
 }
 
 .contacts-divider{
@@ -425,10 +440,11 @@ section:nth-child(2n+1){
 .vertical-list{
     list-style: none;
     text-align: start;
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     margin-left: -30px;
     margin-bottom: 5px;
     color: white;
+    
 }
 
 .vertical-list li img{
@@ -439,7 +455,16 @@ section:nth-child(2n+1){
     color: aliceblue;
     font-style:italic;
     text-decoration: none;
-    
+}
+
+.dock-style li{
+    /* border: 2px solid black; */
+}
+
+.dock-style li a{
+    border-bottom: 2px solid rgb(99, 99, 99);
+    background-color: rgba(160, 160, 160, 0.952);
+    padding-right: 10px;
 }
 
 /* Certifcations */
