@@ -457,10 +457,6 @@ section:nth-child(2n+1){
     text-decoration: none;
 }
 
-.dock-style li{
-    /* border: 2px solid black; */
-}
-
 .dock-style li a{
     border-bottom: 2px solid rgb(99, 99, 99);
     background-color: rgba(160, 160, 160, 0.952);
