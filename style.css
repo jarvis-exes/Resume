@@ -304,6 +304,12 @@ section:nth-child(2n + 1) {
   min-height: 150px;
 }
 
+@media screen and (max-width: 600px) {
+  .timeline-box {
+    margin-bottom: 50px;
+  }
+}
+
 .timeline-box:nth-child(2n) {
   left: 53%;
 }
@@ -578,4 +584,12 @@ section:nth-child(2n + 1) {
 .gallery img:hover {
   box-shadow: darkgray 0px 0px 30px 30px;
   transition: all 0.2s;
+}
+
+@media screen and (max-width: 600px) {
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 15px;
+  }
 }
