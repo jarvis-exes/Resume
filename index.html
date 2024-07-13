@@ -509,7 +509,16 @@
         </li>
       </ul>
     </nav>
-    <script src="./script.js"></script>
+    <script>
+      function openMenu() {
+        var x = document.getElementById("burgermenu");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+        }
+      }
+    </script>
     <script src="lightbox/lightbox-plus-jquery.js"></script>
   </body>
 </html>
