@@ -12,32 +12,6 @@
   </head>
   <body>
     <header id="body-header">
-      <nav>
-        <ul class="horizontal-list text-center nav-menu">
-          <li>
-            <a href="#">Home</a>
-          </li>
-          <li>
-            <a href="#about">About</a>
-          </li>
-          <li>
-            <a href="#skills">Skills</a>
-          </li>
-          <li>
-            <a href="#experience">Experience</a>
-          </li>
-          <li>
-            <a href="#education">Education</a>
-          </li>
-          <li>
-            <a href="#certifications">Certifications</a>
-          </li>
-          <li>
-            <a href="#contact">Contact</a>
-          </li>
-        </ul>
-      </nav>
-
       <div id="name-social-conatainer">
         <div class="text-center">
           <h1 id="my-name">Shubham Sharma</h1>
@@ -449,7 +423,7 @@
               <li>
                 <a href="https://www.linkedin.com/in/jarvisexes/"
                   ><img src="images/linkedin.png" alt="linkedin profile link" />
-                  Linkdin</a
+                  Linkedin</a
                 >
               </li>
               <li>
@@ -484,6 +458,58 @@
         </div>
       </section>
     </main>
+    <nav>
+      <div id="menuButton" onclick="openMenu()">
+        <img src="./images/menu.png" alt="" />
+      </div>
+      <ul id="burgermenu" class="burgerMenuItems">
+        <li onclick="openMenu()">
+          <a href="#">Home</a>
+        </li>
+        <li onclick="openMenu()">
+          <a href="#about">About</a>
+        </li>
+        <li onclick="openMenu()">
+          <a href="#skills">Skills</a>
+        </li>
+        <li onclick="openMenu()">
+          <a href="#experience">Experience</a>
+        </li>
+        <li onclick="openMenu()">
+          <a href="#education">Education</a>
+        </li>
+        <li onclick="openMenu()">
+          <a href="#certifications">Certifications</a>
+        </li>
+        <li onclick="openMenu()">
+          <a href="#contact">Contact</a>
+        </li>
+      </ul>
+      <ul class="nav-menu horizontal-list text-center">
+        <li>
+          <a href="#">Home</a>
+        </li>
+        <li>
+          <a href="#about">About</a>
+        </li>
+        <li>
+          <a href="#skills">Skills</a>
+        </li>
+        <li>
+          <a href="#experience">Experience</a>
+        </li>
+        <li>
+          <a href="#education">Education</a>
+        </li>
+        <li>
+          <a href="#certifications">Certifications</a>
+        </li>
+        <li>
+          <a href="#contact">Contact</a>
+        </li>
+      </ul>
+    </nav>
+    <script src="./script.js"></script>
     <script src="lightbox/lightbox-plus-jquery.js"></script>
   </body>
 </html>
